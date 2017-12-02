@@ -13,7 +13,10 @@ html {
 	font-family: Arial, sans-serif;
 	
 }
-
+#test-button {
+	width : 5%;
+	position : center;
+}
 #nav-wrap {
 	width:100%;
 	z-index:999999;
