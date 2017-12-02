@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Selector</title>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#hola").click(function() {
+                    // alert("Hello");
+                    $("#hello").show();
+                });
+            });
+        </script>
+    </head>
+
+    <header>
+        <h2>Vitech Skeleton</h2>
+    </header>
+    <body>
+        <p>Super simple skeleton</p>
+        <p>Enter script here:</p>    
+        <button id="hola">Implement me</button>
+        <div id="hello" hidden="true">
+            <p id="hide_until_bclick">Do something more</p>
+        </div>
+    </body>
+
+</html>
