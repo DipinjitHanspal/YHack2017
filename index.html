@@ -7,31 +7,9 @@
         <!-- jquery : -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Plotly : -->
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        
-        <script type="text/javascript">
-           
-            function search () {
-                //Search Participants and retrieve the Participant name, date of birth and gender
-                //SELECT pi.name, pi.DOB, pi.sex FROM v_participant pi WHERE pi.state = 'Alaska'
-                url = "https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=state:Alaska&rows=1";
-                
-            };
-            
-            function getJson(){
-                $.ajax({
-                    url : url,
-                    type : "GET",
-                    method: "GET",
-                    headers : {
-                        'Allow-Control-Allow-Origin' : '*'
-                    },
-                    success: function(response) {
-                        console.log(response);
-                    }
-                });
-            }
-
-        </script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+        <!-- Access the json Data: -->       
+        <script src="scripts/dataAccess.js"></script>
     </head>
 
     <header>
