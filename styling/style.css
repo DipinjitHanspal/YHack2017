@@ -33,7 +33,7 @@ html {
 }
 
 #nav li {
-	padding: ;
+	padding: 0;
 	display: inline-block;
 	padding: 0 3%;
 }
@@ -105,15 +105,13 @@ html {
 	transform:translate(-50%);
 	font-family: Arial, sans-serif;
 	color:white;
-}
- 
+} 
 .fixed-bg.bg-1 {
-  background-image: url("test1.jpg");
+  background-image: url("../images/test1.jpg");
 }
 .fixed-bg.bg-2 {
-  background-image: url("test2.jpg");
-
- 
+  background-image: url("../images/test2.jpg");
+}
 .scrolling-bg {
 	min-height: 100%;
 }

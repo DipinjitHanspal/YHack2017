@@ -8,7 +8,8 @@ function getJson() {
        url : url,
        method: "GET",
        success: function(response) {
-           console.log(response);
+        //    console.log(response);
+           alert(response);
            return response; // Return json data
        }
    });
