@@ -1,30 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
-    <head>
-        <title>Selector</title>
-        <meta charset="utf-8"/>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                $("#hola").click(function() {
-                    // alert("Hello");
-                    $("#hello").show();
-                });
-            });
-        </script>
-    </head>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 
-    <header>
-        <h2>Vitech Skeleton</h2>
-    </header>
-    <body>
-        <p>Super simple skeleton</p>
-        <p>Enter script here:</p>    
-        <button id="hola">Implement me</button>
-        <div id="hello" hidden="true">
-            <p id="hide_until_bclick">Do something more</p>
-        </div>
-    </body>
+
+	</head>
+
+	<body>
+
+		<div id="nav-wrap">
+			<ul id="nav">
+				<li style="position: absolute; left:-15%; top:20%;"><img src="logo.png" height="7%" width="7%"></li>
+				<li><a href="index.html#home">Home</a></li>
+				<li><a href="index.html">Solution</a></li>
+				<li><a href="index.html">About Us</a></li>
+				<li><a href="index.html#test">Other</a></li>
+			</ul>
+		</div>
+
+		<div class="fixed-bg bg-1" id="home">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p></p>
+		</div> 
+
+		<div class="plain-bg">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt purus ut ultricies efficitur. Vivamus pretium maximus ex, et accumsan justo malesuada in. Fusce sed ligula dignissim, accumsan magna ut, tempus purus. Sed at elit id mi lobortis commodo. Etiam gravida ligula id dolor convallis tincidunt. Nunc dolor odio, fermentum sit amet tristique vel, dignissim nec odio. Quisque non varius neque. Nunc vehicula risus non risus scelerisque, eget sodales nulla accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+		</div>
+
+		<div class="fixed-bg bg-2" id="test">
+			<h1>Lorem Ipsum Dolor</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt purus ut ultricies efficitur. Vivamus pretium maximus ex, et accumsan justo malesuada in. Fusce sed ligula dignissim, accumsan magna ut, tempus purus.</p>
+		</div>
+	 
+		<!--<div class="cd-scrolling-bg cd-color-2">
+			<div class="cd-container">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+				</p>
+			</div> 
+		</div> -->
+
+	</body>
 
 </html>
