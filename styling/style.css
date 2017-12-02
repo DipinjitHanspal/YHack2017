@@ -1,0 +1,120 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body, html, main {
+	/* important */
+	height: 100%;
+}
+
+
+html {
+	font-family: Arial, sans-serif;
+	
+}
+#test-button {
+	width : 5%;
+	position : center;
+}
+#nav-wrap {
+	width:100%;
+	z-index:999999;
+	position: fixed;
+	/*box-shadow: 0px 0px 15px -1px black;*/
+	height: 75px;
+	line-height:75px;
+	background-color:white;
+}
+
+#nav {
+	position:relative;
+	width:100%;
+	list-style-type:none;
+	display: inline-block;
+	text-align:center;
+}
+
+#nav li {
+	padding: 0;
+	display: inline-block;
+	padding: 0 3%;
+}
+
+#nav li a {
+	text-decoration: none;
+	font-weight:bold;
+	color: #666666;
+	font-size:20px;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+
+}
+
+#nav li a:hover {
+	color: #4183D7;
+}
+
+ 
+.fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position:relative;
+}
+
+.fixed-bg h1 {
+	top: 20%;
+	position: absolute;
+	left:50%;
+	transform:translate(-50%);
+	font-family: Arial, sans-serif;
+	color:white;
+	font-size:4em;
+}
+
+.fixed-bg p {
+	top: 30%;
+	position: absolute;
+	left:50%;
+	transform:translate(-50%);
+	font-family: Arial, sans-serif;
+	color:white;
+}
+
+.plain-bg {
+	min-height: 50%;
+	background-color:#446CB3;
+	position:relative;
+}
+
+.plain-bg h1 {
+	top: 20%;
+	position: absolute;
+	left:50%;
+	transform:translate(-50%);
+	font-family: Arial, sans-serif;
+	color:white;
+	font-size:2.5em;
+}
+
+.plain-bg p {
+	top: 40%;
+	position: absolute;
+	left:50%;
+	transform:translate(-50%);
+	font-family: Arial, sans-serif;
+	color:white;
+} 
+.fixed-bg.bg-1 {
+  background-image: url("../images/test1.jpg");
+}
+.fixed-bg.bg-2 {
+  background-image: url("../images/test2.jpg");
+}
+.scrolling-bg {
+	min-height: 100%;
+}
