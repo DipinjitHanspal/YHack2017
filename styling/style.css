@@ -6,13 +6,9 @@
 body, html, main {
 	/* important */
 	height: 100%;
-}
-
-
-html {
 	font-family: Arial, sans-serif;
-	
 }
+
 #test-button {
 	width : 5%;
 	position : center;
@@ -21,10 +17,10 @@ html {
 	width:100%;
 	z-index:999999;
 	position: fixed;
-	/*box-shadow: 0px 0px 15px -1px black;*/
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 	height: 75px;
 	line-height:75px;
-	background-color:white;
+	background: rgba(255, 255, 255, 0.98);
 }
 
 #nav {
@@ -33,6 +29,7 @@ html {
 	list-style-type:none;
 	display: inline-block;
 	text-align:center;
+	
 }
 
 #nav li {
@@ -64,10 +61,11 @@ html {
 	background-repeat: no-repeat;
 	background-position: center center;
 	position:relative;
+	box-shadow: 50px 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .fixed-bg h1 {
-	top: 20%;
+	top: 75px;
 	position: absolute;
 	left:50%;
 	transform:translate(-50%);
@@ -77,7 +75,7 @@ html {
 }
 
 .fixed-bg p {
-	top: 30%;
+	top: 175px;
 	position: absolute;
 	left:50%;
 	transform:translate(-50%);
@@ -89,10 +87,12 @@ html {
 	min-height: 50%;
 	background-color:#446CB3;
 	position:relative;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 2;
 }
 
 .plain-bg h1 {
-	top: 20%;
+	top: 50px;
 	position: absolute;
 	left:50%;
 	transform:translate(-50%);
@@ -102,19 +102,80 @@ html {
 }
 
 .plain-bg p {
-	top: 40%;
+	top: 150px;
 	position: absolute;
 	left:50%;
 	transform:translate(-50%);
 	font-family: Arial, sans-serif;
 	color:white;
 } 
+
+
+.form-wrap {
+	top: 200px;
+	position: absolute;
+	left:50%;
+	transform:translate(-50%);
+	font-family: Arial, sans-serif;
+	color:white;
+	width:65%;
+	background: rgba(0, 0, 0, 0.5);
+	padding:40px 37.5px 40px 30px;
+	border-radius: 10px;
+}
+
+.reg-form {
+	width:100%;
+}
+
+.form-heading {
+	font-weight:bold;
+	font-size:1.3em;
+	color:white;
+}
+
+.form-input {
+	border:none;
+	width:100%;
+	color:#666666;
+	padding:12.5px 5px;
+	background-color:white;
+	vertical-align:top;
+	margin: 10px 0;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+
+.form-button {
+	border:none;
+	text-align:center;
+	color:white;
+	padding:5px 50px;
+	background-color:#446CB3;
+	border-radius:4px;
+	cursor:pointer;
+	margin-top: 15px;
+	left:50%;
+}
+
+#form-radio {
+	margin-top:22px; 
+	margin-left:10px;
+}
+
+#form-checkbox:not(:first-child) {
+	margin-left:20px;
+}
+
 .fixed-bg.bg-1 {
   background-image: url("../images/test1.jpg");
 }
 .fixed-bg.bg-2 {
   background-image: url("../images/test2.jpg");
 }
+
+
+
 .scrolling-bg {
 	min-height: 100%;
 }
